@@ -45,28 +45,35 @@ public class Book {
     }
 
     public String rentABook(int IDBook){
+
+        if(IDBook > getBookList().size()) return messages.optionUnavailable;
+
         String message = "";
+
         for(Book book : getBookList()) {
             if(IDBook == book.getId()){
                 if(!book.isRented()){
                     book.setRented(true);
-                    message = messages.bookRentalSucessMessage;
+                    message = messages.bookRentalSuccessMessage;
                 }else{
                     message = messages.bookRentalUnavailableMessage;
                 }
             }
         }
-
         return message;
     }
 
     public String returnABook(int IDBook){
+
+        if(IDBook > getBookList().size()) return messages.optionUnavailable;
+
         String message = "";
+
         for(Book book : getBookList()) {
             if(IDBook == book.getId()){
                 if(book.isRented()){
                     book.setRented(false);
-                    message = messages.bookReturnSucessMessage;
+                    message = messages.bookReturnSuccessMessage;
                 }else{
                     message = messages.invalidBookReturnMessage;
                 }

@@ -1,4 +1,4 @@
 package com.twu.biblioteca;
 
-public class RentTest {
+public class LibraryTest {
 }
