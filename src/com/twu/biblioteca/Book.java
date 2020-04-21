@@ -64,7 +64,7 @@ public class Book {
         String message = "";
         for(Book book : getBookList()) {
             if(IDBook == book.getId()){
-                if(!book.isRented()){
+                if(book.isRented()){
                     book.setRented(false);
                     message = messages.bookReturnSucessMessage;
                 }else{
@@ -91,7 +91,6 @@ public class Book {
 
         return toString;
     }
-
 
     //getters and setters
 
