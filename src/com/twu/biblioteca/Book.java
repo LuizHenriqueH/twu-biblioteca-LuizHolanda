@@ -14,9 +14,7 @@ public class Book {
     private boolean rented;
     Messages messages = new Messages();
 
-    public Book() {
-        this.setRented(false);
-    }
+    public Book() { }
 
     //constructor
     public Book(int id, String title, String author, String publisher, int publicationYear) {
@@ -116,6 +114,5 @@ public class Book {
     public void setRented(boolean rented) {
         this.rented = rented;
     }
-
 
 }

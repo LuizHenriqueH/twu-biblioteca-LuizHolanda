@@ -5,12 +5,15 @@ public class Library {
 
     public void start(){
         Scanner in = new Scanner(System.in);  //InputStream
-        int value;
         Book book = new Book();
         Messages messages = new Messages();
         System.out.println(messages.welcomeMessage);
-        book.bookList();
+        book.bookList(); //load book list
+        optionMenu(in, book, messages);
+    }
 
+    private void optionMenu(Scanner in, Book book, Messages messages) {
+        int value;
         loop: while (true) {
             try {
                 System.out.println(messages.menuOptionMessage);
@@ -42,7 +45,6 @@ public class Library {
             } catch (java.util.InputMismatchException e) {
                 System.out.println(messages.unexpectedValueMessage);
                 in.next();
-                continue;
             }
         }
     }
