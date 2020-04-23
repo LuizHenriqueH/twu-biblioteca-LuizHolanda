@@ -1,12 +1,10 @@
 package com.twu.biblioteca;
-
-import java.text.ParseException;
-import java.util.Scanner;
+import com.twu.facade.Facade;
 
 public class BibliotecaApp {
 
     public static void main(String[] args) {
-        Library lib = new Library();
-        lib.start();
+        Facade facade = Facade.getInstance();
+        facade.start();
     }
 }

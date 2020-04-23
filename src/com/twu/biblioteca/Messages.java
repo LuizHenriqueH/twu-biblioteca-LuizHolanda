@@ -17,10 +17,5 @@ public class Messages {
     public final String bookRentalUnavailableMessage = "Sorry! The book is not available.";
     public final String bookReturnSuccessMessage = "Thank you for returning the book.";
     public final String invalidBookReturnMessage = "That is not a valid book to return.";
-
-    public void mainMenu(int value){
-        if(value == 0) {
-            System.out.println(welcomeMessage);
-        }
-    }
+    
 }
