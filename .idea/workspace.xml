@@ -20,22 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="287cef3b-38c5-47fa-8320-6410a9255904" name="Default Changelist" comment="BookList">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/dao/BookDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/dao/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/facade/Facade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/facade/IFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Library.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/BibliotecaApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Library.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/LibraryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/MovieTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BookTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookDAOTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +58,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.BibliotecaApp">
+  <component name="RunManager" selected="JUnit.BookDAOTest">
     <configuration name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BibliotecaApp" />
       <module name="biblioteca" />
@@ -80,7 +72,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
@@ -89,67 +81,66 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.invalidBookReturnMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest.rentABookSuccessMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.entity.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookTest" />
-      <option name="METHOD_NAME" value="invalidBookReturnMessageTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookControllerTest" />
+      <option name="METHOD_NAME" value="rentABookSuccessMessageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.rentABookSuccessStatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest.rentABookUnavailableMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.entity.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookTest" />
-      <option name="METHOD_NAME" value="rentABookSuccessStatusTest" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookControllerTest" />
+      <option name="METHOD_NAME" value="rentABookUnavailableMessageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.returnABookSuccessStatusTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookDAOTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="biblioteca" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.twu.entity.*" />
+          <option name="PATTERN" value="com.twu.biblioteca.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.twu.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookTest" />
-      <option name="METHOD_NAME" value="returnABookSuccessStatusTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.twu.biblioteca.BookDAOTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookDAOTest" />
+        <item itemvalue="JUnit.BookControllerTest" />
+        <item itemvalue="JUnit.BookControllerTest.rentABookUnavailableMessageTest" />
+        <item itemvalue="JUnit.BookControllerTest.rentABookSuccessMessageTest" />
         <item itemvalue="Application.BibliotecaApp" />
-        <item itemvalue="JUnit.BookTest" />
-        <item itemvalue="JUnit.BookTest.returnABookSuccessStatusTest" />
-        <item itemvalue="JUnit.BookTest.rentABookSuccessStatusTest" />
-        <item itemvalue="JUnit.BookTest.invalidBookReturnMessageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -189,6 +180,10 @@
     <state x="-1174" y="243" key="#com.intellij.ide.util.MemberChooser/-1920.23.1920.1057/0.23.1680.952@-1920.23.1920.1057" timestamp="1587597209320" />
     <state x="653" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1587438303520" />
     <state x="653" y="222" key="#com.intellij.ide.util.MemberChooser/0.23.1680.952@0.23.1680.952" timestamp="1587044144787" />
+    <state x="-1347" y="483" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587604595682">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1347" y="483" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1920.23.1920.1057/0.23.1680.954@-1920.23.1920.1057" timestamp="1587604595682" />
     <state x="-1339" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1587598476962">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
@@ -201,32 +196,32 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="446" height="466" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1587053906523" />
-    <state width="1579" height="396" key="GridCell.Tab.0.bottom" timestamp="1587602523377">
+    <state width="1578" height="396" key="GridCell.Tab.0.bottom" timestamp="1587604426941">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1580" height="396" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1680.952@-1920.23.1920.1057" timestamp="1587598141843" />
-    <state width="1579" height="396" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1680.954@-1920.23.1920.1057" timestamp="1587602523377" />
+    <state width="1578" height="396" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1680.954@-1920.23.1920.1057" timestamp="1587604426941" />
     <state width="1379" height="396" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1587557017565" />
     <state width="1638" height="364" key="GridCell.Tab.0.bottom/0.23.1680.952@0.23.1680.952" timestamp="1587069928756" />
-    <state width="1579" height="396" key="GridCell.Tab.0.center" timestamp="1587602523376">
+    <state width="1578" height="396" key="GridCell.Tab.0.center" timestamp="1587604426940">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1580" height="396" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1680.952@-1920.23.1920.1057" timestamp="1587598141842" />
-    <state width="1579" height="396" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1680.954@-1920.23.1920.1057" timestamp="1587602523376" />
+    <state width="1578" height="396" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1680.954@-1920.23.1920.1057" timestamp="1587604426940" />
     <state width="1379" height="396" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1587557017563" />
     <state width="1638" height="364" key="GridCell.Tab.0.center/0.23.1680.952@0.23.1680.952" timestamp="1587069928755" />
-    <state width="1579" height="396" key="GridCell.Tab.0.left" timestamp="1587602523375">
+    <state width="1578" height="396" key="GridCell.Tab.0.left" timestamp="1587604426940">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1580" height="396" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1680.952@-1920.23.1920.1057" timestamp="1587598141841" />
-    <state width="1579" height="396" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1680.954@-1920.23.1920.1057" timestamp="1587602523375" />
+    <state width="1578" height="396" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1680.954@-1920.23.1920.1057" timestamp="1587604426940" />
     <state width="1379" height="396" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1587557017563" />
     <state width="1638" height="364" key="GridCell.Tab.0.left/0.23.1680.952@0.23.1680.952" timestamp="1587069928754" />
-    <state width="1579" height="396" key="GridCell.Tab.0.right" timestamp="1587602523376">
+    <state width="1578" height="396" key="GridCell.Tab.0.right" timestamp="1587604426940">
       <screen x="-1920" y="23" width="1920" height="1057" />
     </state>
     <state width="1580" height="396" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1680.952@-1920.23.1920.1057" timestamp="1587598141842" />
-    <state width="1579" height="396" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1680.954@-1920.23.1920.1057" timestamp="1587602523376" />
+    <state width="1578" height="396" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1680.954@-1920.23.1920.1057" timestamp="1587604426940" />
     <state width="1379" height="396" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1587557017564" />
     <state width="1638" height="364" key="GridCell.Tab.0.right/0.23.1680.952@0.23.1680.952" timestamp="1587069928755" />
     <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1587069928758">
