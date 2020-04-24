@@ -15,43 +15,53 @@ public class BookControllerTest {
 
     @Test
     public void rentABookSuccessMessageTest(){
-        BookController book = new BookController();
+        BookController bookController = new BookController();
+        String libraryNumber = "002-5678";
+        String password = "b5678";
         String expectedReturnMessage = "Thank you! Enjoy the Book.";
-        assertEquals(expectedReturnMessage, book.rentABook(2,book.getAll()));
+        assertEquals(expectedReturnMessage, bookController.rentABook(2,bookController.getAll(),libraryNumber, password));
     }
 
     @Test
     public void rentABookUnavailableMessageTest(){
-        BookController book = new BookController();
-        List<Book> list = book.getAll();
+        BookController bookController = new BookController();
+        String libraryNumber = "003-9101";
+        String password = "c7891";
+        List<Book> list = bookController.getAll();
         String expectedReturnMessage = "Sorry! The book is not available.";
-        book.rentABook(3, list);
-        assertEquals(expectedReturnMessage, book.rentABook(3, list));
+        bookController.rentABook(3, list, libraryNumber, password);
+        assertEquals(expectedReturnMessage, bookController.rentABook(3, list,libraryNumber, password));
     }
 
     @Test
     public void returnABookSuccessMessageTest(){
-        BookController book = new BookController();
-        List<Book> list = book.getAll();
+        BookController bookController = new BookController();
+        String libraryNumber = "004-1121";
+        String password = "d0111";
+        List<Book> list = bookController.getAll();
         String expectedReturnMessage = "Thank you for returning the book.";
-        book.rentABook(4, list);
-        assertEquals(expectedReturnMessage, book.returnABook(4, list));
+        bookController.rentABook(4, list, libraryNumber, password);
+        assertEquals(expectedReturnMessage, bookController.returnABook(4, list, libraryNumber, password));
     }
 
     @Test
     public void invalidBookReturnMessageTest(){
-        BookController book = new BookController();
-        List<Book> list = book.getAll();
+        BookController bookController = new BookController();
+        String libraryNumber = "004-1121";
+        String password = "d0111";
+        List<Book> list = bookController.getAll();
         String expectedReturnMessage = "That is not a valid book to return.";
-        assertEquals(expectedReturnMessage, book.returnABook(4, list));
+        assertEquals(expectedReturnMessage, bookController.returnABook(4, list, libraryNumber, password));
     }
 
     @Test
     public void rentABookSuccessStatusTest(){
-        BookController book = new BookController();
-        List<Book> list = book.getAll();
+        BookController bookController = new BookController();
+        String libraryNumber = "005-3141";
+        String password = "e2131";
+        List<Book> list = bookController.getAll();
         int bookIDRented = 2;
-        book.rentABook(bookIDRented, list);
+        bookController.rentABook(bookIDRented, list, libraryNumber, password);
 
         for(Book books : list){
             if(books.getId() == bookIDRented){
@@ -63,11 +73,13 @@ public class BookControllerTest {
 
     @Test
     public void returnABookSuccessStatusTest(){
-        BookController book = new BookController();
-        List<Book> list = book.getAll();
-        int bookIDRented = 2;
-        book.rentABook(bookIDRented, list);
-        book.returnABook(bookIDRented, list);
+        BookController bookController = new BookController();
+        List<Book> list = bookController.getAll();
+        String libraryNumber = "005-3141";
+        String password = "e2131";
+        int bookIDRented = 3;
+        bookController.rentABook(bookIDRented, list, libraryNumber, password);
+        bookController.returnABook(bookIDRented, list, libraryNumber, password);
 
         for(Book books : list){
             if(books.getId() == bookIDRented){

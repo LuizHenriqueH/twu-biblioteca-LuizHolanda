@@ -9,7 +9,7 @@ public class BookDAO implements DAO<Book>{
 
     @Override
     public List<Book> getAll() {
-        bookList = new ArrayList();
+        bookList = new ArrayList<Book>();
 
         bookList.add(new Book(1,"Harry Potter and the Philosopher's Stone", "J.K. Rowling","Rocco", 1997 ));
         bookList.add(new Book(2,"Harry Potter and the Chamber of Secrets", "J.K. Rowling","Rocco", 1998 ));

@@ -1,10 +1,5 @@
 package com.twu.entity;
 
-import com.twu.biblioteca.Messages;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class Book {
 
     private int id;
@@ -12,11 +7,7 @@ public class Book {
     private String author;
     private String publisher;
     private int publicationYear;
-    private List<Book> bookList;
     private boolean rented;
-    Messages messages = new Messages();
-
-    public Book() { }
 
     //constructor
     public Book(int id, String title, String author, String publisher, int publicationYear) {
@@ -25,7 +16,7 @@ public class Book {
         this.author = author;
         this.publisher = publisher;
         this.publicationYear = publicationYear;
-        this.setRented(false);
+        setRented(false);
     }
 
     public String toString() {
@@ -51,8 +42,40 @@ public class Book {
         return id;
     }
 
-    public List<Book> getBookList() {
-        return bookList;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getPublisher() {
+        return publisher;
+    }
+
+    public void setPublisher(String publisher) {
+        this.publisher = publisher;
+    }
+
+    public int getPublicationYear() {
+        return publicationYear;
+    }
+
+    public void setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
     }
 
     public boolean isRented() {
@@ -62,5 +85,4 @@ public class Book {
     public void setRented(boolean rented) {
         this.rented = rented;
     }
-
 }
