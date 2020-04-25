@@ -20,39 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="287cef3b-38c5-47fa-8320-6410a9255904" name="Default Changelist" comment="BookList">
-      <change afterPath="$PROJECT_DIR$/src/com/twu/controller/MovieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/dao/MovieDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/entity/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/twu/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/MovieDAOTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/UserControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/UserDAOTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queries/Q1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queries/Q2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queries/Q3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queries/Q4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queries/Q5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/BibliotecaApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/BibliotecaApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Messages.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/biblioteca/Messages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/controller/BookController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/dao/BookDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/dao/BookDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/dao/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/dao/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/entity/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/facade/Facade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/facade/Facade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/biblioteca/com/twu/facade/IFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/twu/facade/IFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/BibliotecaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/BibliotecaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookControllerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookDAOTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/BookDAOTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/ExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/twu/biblioteca/ExampleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/biblioteca/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/biblioteca/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/dao/BookDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/facade/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/facade/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/twu/facade/IFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/twu/facade/IFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/twu/biblioteca/BookDAOTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/twu/biblioteca/BookDAOTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +170,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="BookList" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1195" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587773334428">
+      <screen x="-1920" y="23" width="1920" height="977" />
+    </state>
+    <state x="-1195" y="320" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.977/0.23.1680.1027@-1920.23.1920.977" timestamp="1587773334428" />
     <state x="-1174" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1587623212680">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>

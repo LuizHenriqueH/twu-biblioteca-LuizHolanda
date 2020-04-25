@@ -1,0 +1,4 @@
+insert into book(id, title) values (11,"The Pragmatic Programmer");
+insert into member(id, name) values (43,"Luiz Holanda");
+insert into checkout_item(member_id,book_id,movie_id) values (43,11,null);
+select t1.name from member t1 inner join checkout_item t2 on t1.id = t2.member_id inner join book t3 on t2.book_id = t3.id where t3.title="The Pragmatic Programmer";

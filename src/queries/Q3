@@ -1,0 +1,2 @@
+select title from book where id NOT IN(select book_id from checkout_item t1);
+select title from movie where id NOT IN(select movie_id from checkout_item t1);

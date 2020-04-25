@@ -1,0 +1,1 @@
+select t1.name from member t1 inner join checkout_item t2 on t1.id = t2.member_id group by member_id having count(member_id)>1;

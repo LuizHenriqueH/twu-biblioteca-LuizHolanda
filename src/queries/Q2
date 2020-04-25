@@ -1,0 +1,1 @@
+select count(id) from member where id NOT IN(select member_id from checkout_item t1);
